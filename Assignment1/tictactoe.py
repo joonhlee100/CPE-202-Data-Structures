@@ -25,14 +25,14 @@ class Board:
 
         self.items = []
         for i in range(3):
-            rowlst = []
+            row_list = []
             for j in range(3):
                 if board == None:
-                    rowlst.append(Dummy())
+                    row_list.append(Dummy())
                 else:
-                    rowlst.append(board[i][j])
+                    row_list.append(board[i][j])
 
-            self.items.append(rowlst)
+            self.items.append(row_list)
 
     # Accessor method for the screen
     def getscreen(self):
